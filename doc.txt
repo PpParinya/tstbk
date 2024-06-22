@@ -1,0 +1,27 @@
+install go
+
+Extension for vs-code
+    - go
+    Ctrl+Shit+P  "Install/Update Tools"  install all
+    Ctrl+Shit+P  "Insert Snippet"
+    - https://github.com/liudng/dogo >>> for (linux & Windows)
+
+new project
+    - add file 'main.go'
+    - run 'go mod init github.com/tst/backend'
+run project
+    - run 'go run main.go'
+
+remove any unused dependencies from the module.
+    - run 'go mod tidy -v'
+
+
+go build
+
+    windows
+        - $Env:GOARCH = "amd64"
+        - $Env:GOOS = "linux"
+        - go build
+
+    linux
+        - GOOS=linux GOARCH=amd64 go build

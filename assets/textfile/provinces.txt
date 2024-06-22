@@ -1,0 +1,79 @@
+|0|0|Unknown|ไม่ทราบ|NULL
+|2|1|Bangkok|กรุงเทพมหานคร|1
+|3|1|Ang Thong|อ่างทอง|103
+|5|1|Betong|เบตง|907
+|6|1|Bueng Kan|บึงกาฬ|309
+|7|1|Saraburi|สระบุรี|104
+|8|1|Phra Nakhon Si Ayutthaya|พระนครศรีอยุธยา|105
+|9|1|Pathum Thani|ปทุมธานี|106
+|11|1|Samut Prakarn|สมุทรปราการ|108
+|12|1|Nakhon Nayok|นครนายก|200
+|13|1|Chiang Rai|เชียงราย|500
+|14|1|Chachoengsao|ฉะเชิงเทรา|202
+|15|1|Chon Buri|ชลบุรี|203
+|16|1|Rayong|ระยอง|204
+|17|1|Kamphaeng Phet|กำแพงเพชร|604
+|18|1|Kanchanaburi|กาญจนบุรี|701
+|19|1|Khon Kaen|ขอนแก่น|405
+|20|1|Chaiyaphum|ชัยภูมิ|300
+|21|1|Lampang|ลำปาง|506
+|22|1|Lamphun|ลำพูน|505
+|23|1|Loei|เลย|401
+|24|1|Lopburi|ลพบุรี|102
+|25|1|Nakhon Ratchasima|นครราชสีมา|305
+|26|1|Surin|สุรินทร์|306
+|27|1|Mukdahan|มุกดาหาร|409
+|30|1|Nong Khai|หนองคาย|400
+|33|1|Nakhon Si Thammarat|นครศรีธรรมราช|804
+|34|1|Nan|น่าน|504
+|35|1|Narathiwat|นราธิวาส|906
+|36|1|Nong Bua Lam Phu|หนองบัวลำภู|308
+|37|1|Maha Sarakham|มหาสารคาม|407
+|38|1|Roi Et|ร้อยเอ็ด|408
+|40|1|Pattani|ปัตตานี|904
+|41|1|Chiang Mai|เชียงใหม่|502
+|42|1|Phatthalung|พัทลุง|900
+|43|1|Phayao|พะเยา|503
+|44|1|Phetchabun|เพชรบูรณ์|606
+|46|1|Phichit|พิจิตร|605
+|47|1|Uttaradit|อุตรดิตถ์|600
+|49|1|Phrae|แพร่|507
+|50|1|Phuket|ภูเก็ต|806
+|51|1|Prachinburi|ปราจีนบุรี|201
+|53|1|Ranong|ระนอง|801
+|54|1|Nakhon Sawan|นครสวรรค์|607
+|57|1|Sa Kaeo|สระแก้ว|207
+|58|1|Nakhon Pathom|นครปฐม|702
+|59|1|Ratchaburi|ราชบุรี|703
+|60|1|Samut Sakhon|สมุทรสาคร|704
+|61|1|Samut Songkhram|สมุทรสงคราม|705
+|62|1|Phetchaburi|เพชรบุรี|706
+|63|1|Prachuap Khiri Khan|ประจวบคีรีขันธ์|707
+|64|1|Sing Buri|สิงห์บุรี|101
+|65|1|Si Sa Ket|ศรีสะเกษ|303
+|66|1|Surat Thani|สุราษฎร์ธานี|802
+|67|1|Sukhothai|สุโขทัย|601
+|68|1|Suphan Buri|สุพรรณบุรี|700
+|71|1|Tak|ตาก|602
+|72|1|Trang|ตรัง|901
+|73|1|Trat|ตราด|206
+|74|1|Ubon Ratchathani|อุบลราชธานี|302
+|75|1|Udon Thani|อุดรธานี|402
+|76|1|Uthai Thani|อุทัยธานี|608
+|78|1|Yala|ยะลา|905
+|79|1|Yasothon|ยโสธร|301
+|80|1|Amnat Charoen|อำนาจเจริญ|307
+|81|1|Buriram|บุรีรัมย์|304
+|83|1|Chai Nat|ชัยนาท|100
+|84|1|Chanthaburi|จันทบุรี|205
+|87|1|Chumphon|ชุมพร|800
+|88|1|Kalasin|กาฬสินธุ์|406
+|89|1|Krabi|กระบี่|805
+|90|1|Mae Hong Son|แม่ฮ่องสอน|501
+|92|1|Nakhon Phanom|นครพนม|403
+|93|1|Nonthaburi|นนทบุรี|107
+|94|1|Phangnga|พังงา|803
+|95|1|Phisanulok|พิษณุโลก|603
+|98|1|Sakon Nakhon|สกลนคร|404
+|99|1|Satun|สตูล|903
+|100|1|Songkhla|สงขลา|902

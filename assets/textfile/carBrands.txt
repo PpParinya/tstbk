@@ -1,0 +1,17 @@
+|0|ไม่ทราบ|NULL
+|42|Isuzu|NULL
+|43|Hino|NULL
+|56|BENZ|NULL
+|59|Mitsubishi|NULL
+|61|Nissan|NULL
+|88|Toyota|NULL
+|94|Volvo|NULL
+|119|Sinotruk|NULL
+|120|Scania|NULL
+|121|UD Truck|NULL
+|122|Sany|NULL
+|123|MITSUBISHI FUSO|NULL
+|124|Faw|NULL
+|125|Honda|NULL
+|126|XCMG|NULL
+|127|TADANO|NULL
