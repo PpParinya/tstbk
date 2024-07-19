@@ -18,6 +18,8 @@ func RouteInit(r *fiber.App) {
 	r.Post("/login", handler.LoginHandler)
 	r.Get("/getUsers", middleware.Auth, handler.UserHandlerGetAll)
 
+	r.Get("/GetAccountTree", middleware.Auth, handler.GetAccountTree)
+
 	r.Get("/GetAllDevices", middleware.Auth, handler.GetAllDevices)
 
 	r.Get("/GetDeviceByUser", middleware.Auth, handler.GetDeviceByUser)

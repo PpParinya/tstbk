@@ -24,3 +24,8 @@ func UserHandlerGetAll(ctx *fiber.Ctx) error {
 
 	return ctx.JSON(users)
 }
+
+func GetAccountTree(ctx *fiber.Ctx) error {
+
+	return ctx.JSON("GetAccountTree")
+}
