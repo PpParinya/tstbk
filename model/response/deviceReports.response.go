@@ -1,20 +1,20 @@
 package response
 
 type DeviceReportsResponse struct {
-	DeviceID        string `json:"deviceID"`
-	ReportedOn      string `json:"reportedOn"`
-	PositionStatus  int `json:"positionStatus"`
-	Latitude        string `json:"latitude"`
-	Longitude       string `json:"longitude"`
-	Speed           string `json:"speed"`
-	Angle           string `json:"angle"`
-	IsWired         string `json:"isWired"`
-	IsAccOn         string `json:"isAccOn"`
-	IsDout1Active   string `json:"isDout1Active"`
-	IsSwitchOn      string `json:"isSwitchOn"`
-	ReportAddress   string `json:"reportAddress"`
-	ReportAddressEn string `json:"reportAddressEn"`
-	DltLicenseType  string `json:"dltLicenseType"`
-	DltLicense      string `json:"dltLicense"`
-	DltDriverName   string `json:"dltDriverName"`
+	DeviceID        string `json:"DeviceID"`
+	ReportedOn      string `json:"ReportedOn"`
+	PositionStatus  int    `json:"PositionStatus"`
+	Latitude        string `json:"Latitude"`
+	Longitude       string `json:"Longitude"`
+	Speed           string `json:"Speed"`
+	Angle           string `json:"Angle"`
+	IsWired         string `json:"IsWired"`
+	IsAccOn         string `json:"IsAccOn"`
+	IsDout1Active   string `json:"IsDout1Active"`
+	IsSwitchOn      string `json:"IsSwitchOn"`
+	ReportAddress   string `json:"ReportAddress"`
+	ReportAddressEn string `json:"ReportAddressEn"`
+	DltLicenseType  string `json:"DltLicenseType"`
+	DltLicense      string `json:"DltLicense"`
+	DltDriverName   string `json:"DltDriverName"`
 }

@@ -49,7 +49,7 @@ func LoginHandler(ctx *fiber.Ctx) error {
 	//Generate JWT
 
 	claims := jwt.MapClaims{}
-	claims["userID"] = user.UserID
+	claims["UserID"] = user.UserID
 	claims["username"] = user.Username
 	claims["fullname"] = user.Fullname
 	claims["userType"] = user.UserType
@@ -62,7 +62,7 @@ func LoginHandler(ctx *fiber.Ctx) error {
 		claims["role"] = "user"
 	}
 
-	token, errGenerateToken := utils.GenerateToken(&claims)
+	Token, errGenerateToken := utils.GenerateToken(&claims)
 	if errGenerateToken != nil {
 		log.Println(errGenerateToken)
 		return ctx.Status(fiber.StatusUnauthorized).JSON(fiber.Map{
@@ -71,9 +71,9 @@ func LoginHandler(ctx *fiber.Ctx) error {
 	}
 
 	return ctx.JSON(fiber.Map{
-		"token": token,
-		"userName": user.Username,
-		"userID": user.UserID,
+		"Token": Token,
+		"UserName": user.Username,
+		"UserID": user.UserID,
 	})
 
 }

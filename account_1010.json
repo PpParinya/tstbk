@@ -1,0 +1,19 @@
+{
+  "ID": 1010,
+  "Name": "\tCash",
+  "ParentID": {
+    "Int64": 1000,
+    "Valid": true
+  },
+  "Children": [
+    {
+      "ID": 1011,
+      "Name": "\tPetty Cash",
+      "ParentID": {
+        "Int64": 1010,
+        "Valid": true
+      },
+      "Children": null
+    }
+  ]
+}

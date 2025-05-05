@@ -11,10 +11,10 @@ import (
 
 func GetMarkerByUser(ctx *fiber.Ctx) error {
 
-	var userID = ctx.Query("userId")
+	var UserID = ctx.Query("UserID")
 
 	var device []entity.CustomMarkers
-	database.DB.Debug().Table("CustomMarkers").Where("userID = ?", userID).Find(&device)
+	database.DB.Debug().Table("CustomMarkers").Where("userID = ?", UserID).Find(&device)
 	return ctx.JSON(device)
 }
 
@@ -25,7 +25,7 @@ func AddMarker(ctx *fiber.Ctx) error {
 		return err
 	}
 
-	userInfos := ctx.Locals("userID").(string)
+	userInfos := ctx.Locals("UserID").(string)
 
 	customMarkers.CreatedBy = userInfos
 	customMarkers.CreatedOn = time.Now()

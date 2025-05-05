@@ -14,10 +14,10 @@ func GetDeviceByUser(ctx *fiber.Ctx) error {
 	// var userID = -9223372036854771339 //server
 	// var userID = -9223372036854775800 //local
 
-	var userID = ctx.Query("userId")
+	var UserID = ctx.Query("UserID")
 
 	var device []entity.Devices
-	database.DB.Debug().Table("Devices").Where("userID = ?", userID).Find(&device)
+	database.DB.Debug().Table("Devices").Where("userID = ?", UserID).Find(&device)
 	return ctx.JSON(device)
 }
 
@@ -25,7 +25,9 @@ func AddDevice(ctx *fiber.Ctx) error {
 
 	var device = new(request.Devices)
 	if err := ctx.BodyParser(device); err != nil {
-		return err
+		return ctx.Status(500).JSON(fiber.Map{
+			"message": err.Error(),
+		})
 	}
 
 	device.AddedOn = time.Now()

@@ -1,9 +1,9 @@
 package response
 
 type UserResponse struct {
-	UserID       string `json:"userID"`
-	Username     string `json:"username"`
-	Fullname     string `json:"fullname"`
-	UserType     string `json:"userType"`
-	ParentUserID string `json:"parentUserID"`
+	UserID       string `json:"UserID"`
+	Username     string `json:"Username"`
+	Fullname     string `json:"Fullname"`
+	UserType     string `json:"UserType"`
+	ParentUserID string `json:"ParentUserID"`
 }

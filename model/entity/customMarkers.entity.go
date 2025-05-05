@@ -9,7 +9,7 @@ type CustomMarkers struct {
 	Longitude         string    `json:"Longitude"`
 	Name              string    `json:"Name"`
 	Description       string    `json:"Description"`
-	CreatedBy         string     `json:"CreatedBy"`
+	CreatedBy         string    `json:"CreatedBy"`
 	CreatedOn         time.Time `json:"CreatedOn"`
 	Perimeter         int       `json:"Perimeter"`
 	IconType          int       `json:"IconType"`

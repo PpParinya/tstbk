@@ -16,9 +16,9 @@ func RouteInit(r *fiber.App) {
 	r.Get("queryProvinces", handler.GetProvinces)
 
 	r.Post("/login", handler.LoginHandler)
-	r.Get("/getUsers", middleware.Auth, handler.UserHandlerGetAll)
 
-	r.Get("/GetAccountTree", middleware.Auth, handler.GetAccountTree)
+	r.Get("/GetAccountsByUserID", middleware.Auth, handler.GetAccountsByUserID)
+	r.Get("/GetAccountsTreeByUserID", middleware.Auth, handler.GetAccountsTreeByUserID)
 
 	r.Get("/GetAllDevices", middleware.Auth, handler.GetAllDevices)
 
@@ -30,8 +30,6 @@ func RouteInit(r *fiber.App) {
 	r.Get("/GetMarkerByUser", middleware.Auth, handler.GetMarkerByUser)
 	r.Post("/addMarker", middleware.Auth, handler.AddMarker)
 	r.Delete("/deleteMarker", middleware.Auth, handler.DeleteMarker)
-
-
 
 	r.Get("/getHistory30", middleware.Auth, handler.GetHistory30)
 	r.Get("/getDaily", middleware.Auth, handler.GetDaily)

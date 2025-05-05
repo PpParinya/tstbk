@@ -4,7 +4,7 @@ import "time"
 
 type CustomMarkers struct {
 	MarkerID          int64     `gorm:"column:MarkerID; not null; autoIncrement"`
-	UserID            string    `json:"UserID" gorm:"column:UserID"`
+	UserID            int64    `json:"UserID" gorm:"column:UserID"`
 	Latitude          string    `json:"Latitude" gorm:"column:Latitude"`
 	Longitude         string    `json:"Longitude" gorm:"column:Longitude"`
 	Name              string    `json:"Name" gorm:"column:Name"`

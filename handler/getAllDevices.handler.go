@@ -18,11 +18,11 @@ const TIME_UTC = 420 // + 7h
 
 func GetAllDevices(ctx *fiber.Ctx) error {
 
-	var userID = ctx.Query("userId")
+	var UserID = ctx.Query("UserID")
 
 	var Devices []entity.Devices
 	var GetAllDevices []response.GetAllDevices
-	err := database.DB.Debug().Raw("EXECUTE Web_Devices_GetListByUser  @UserID = ?", userID).Scan(&Devices).Error
+	err := database.DB.Debug().Raw("EXECUTE Web_Devices_GetListByUser  @UserID = ?", UserID).Scan(&Devices).Error
 	if err != nil {
 		return ctx.Status(fiber.StatusUnauthorized).JSON(fiber.Map{
 			"message": "wrong credential",

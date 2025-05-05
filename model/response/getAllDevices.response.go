@@ -4,15 +4,15 @@ import "time"
 
 type GetAllDevices struct {
 	//DeviceStatus
-	DeviceID      int64   `json:"DeviceID"`
-	UserID        int64   `json:"UserID"`
+	DeviceID      int64   `json:"DeviceID,string" gorm:"column:DeviceID"`
+	UserID        int64   `json:"UserID,string" gorm:"column:UserID"`
 	DeviceSerial  string  `json:"DeviceSerial"`
 	PlateNumber   string  `json:"PlateNumber"`
 	Driver        string  `json:"Driver"`
 	OwnerNumber   string  `json:"OwnerNumber"`
 	Status        string  `json:"Status"`
 	StatusDetail  string  `json:"StatusDetail"`
-	IconType      int64  `json:"IconType"`
+	IconType      int64   `json:"IconType"`
 	CustomerName  string  `json:"CustomerName"`
 	Remarks       string  `json:"Remarks"`
 	TruckNumber   string  `json:"TruckNumber"`
@@ -25,7 +25,7 @@ type GetAllDevices struct {
 	Lat            string    `json:"Lat"`
 	Lng            string    `json:"Lng"`
 	ReportDateTime time.Time `json:"ReportDateTime"`
-	IsWired        *bool      `json:"IsWired"`
+	IsWired        *bool     `json:"IsWired"`
 	Temperature    float64   `json:"Temperature"`
 	Fuel           float64   `json:"Fuel"`
 	FuelMax        float64   `json:"FuelMax"`
@@ -33,6 +33,6 @@ type GetAllDevices struct {
 
 	Address             string `json:"Address"`
 	IoDescriptions      int64  `json:"IoDescriptions"`
-	IsCircuitBreakModel *bool   `json:"IsCircuitBreakModel"`
-	IsCircuitBroken     *bool   `json:"IsCircuitBroken"`
+	IsCircuitBreakModel *bool  `json:"IsCircuitBreakModel"`
+	IsCircuitBroken     *bool  `json:"IsCircuitBroken"`
 }

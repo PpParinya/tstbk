@@ -1,6 +1,7 @@
 package middleware
 
 import (
+
 	"github.com/gofiber/fiber/v2"
 	"github.com/tst/backend/utils"
 )
@@ -29,7 +30,7 @@ func Auth(ctx *fiber.Ctx) error {
 	// }
 
 	ctx.Locals("userInfo", claims)
-	ctx.Locals("userID", claims["userID"])
+	ctx.Locals("UserID", claims["UserID"])
 
 	return ctx.Next()
 }

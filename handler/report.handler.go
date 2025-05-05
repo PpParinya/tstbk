@@ -1,7 +1,6 @@
 package handler
 
 import (
-	"fmt"
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/tst/backend/database"
@@ -55,7 +54,6 @@ func GetHistory30(ctx *fiber.Ctx) error {
 
 func GetDaily(ctx *fiber.Ctx) error {
 
-	fmt.Println("5555")
 	return nil;
 }
 
