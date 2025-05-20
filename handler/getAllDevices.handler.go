@@ -2,7 +2,9 @@ package handler
 
 import (
 	"fmt"
+	"log"
 	"math"
+	"strconv"
 	"time"
 
 	"github.com/gofiber/fiber/v2"
@@ -101,8 +103,15 @@ func GetAllDevices(ctx *fiber.Ctx) error {
 				}
 			}
 
+			lat, err1 := strconv.ParseFloat(devicesByUsers.Lat, 64)
+			lng, err2 := strconv.ParseFloat(devicesByUsers.Lng, 64)
+
+			if err1 != nil || err2 != nil {
+				log.Println("Invalid lat/lng:", err1, err2)
+			}
+
 			// getAddress
-			devicesByUsers.Address = service.NameAddress(devicesByUsers.Lat, devicesByUsers.Lng)
+			devicesByUsers.Address = service.NameAddress(lat, lng)
 			fmt.Println(devicesByUsers.Address)
 
 			if *Devices[i].IsCircuitBreakModel {

@@ -4,6 +4,7 @@ import (
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/cors"
 	"github.com/tst/backend/database"
+	"github.com/tst/backend/database/redisclient"
 	"github.com/tst/backend/route"
 )
 
@@ -18,6 +19,8 @@ func handleRequest() {
 
 	app := fiber.New()
 
+	redisclient.InitRedis()
+	
 	app.Use(cors.New(cors.Config{
 		AllowOrigins:     "*",
 		AllowMethods:     "GET,POST,HEAD,PUT,DELETE,PATCH",
